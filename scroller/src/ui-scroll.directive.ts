@@ -9,7 +9,7 @@ import {
 import { UiScrollComponent } from './ui-scroll.component';
 import { IDatasource, RoutinesClassType } from './types';
 
-@Directive({ selector: '[uiScroll][uiScrollOf]' })
+@Directive({ standalone:true, selector: '[uiScroll][uiScrollOf]' })
 export class UiScrollDirective<ItemData = unknown> implements OnInit {
   private datasource!: IDatasource<ItemData>;
   private Routines?: RoutinesClassType;
