@@ -15,6 +15,7 @@ import consumer from './ui-scroll.version';
 
 @Component({
   selector: '[ui-scroll]',
+  standalone:true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: ` <div data-padding-backward></div>
     <div
